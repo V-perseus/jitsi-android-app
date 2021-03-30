@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1b1b1b"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ring"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f2f2f2"
+        android:text="Start/Join Meeting"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="50dp"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/conferenceName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:contentDescription="Enter conference name..."
+            android:ems="10"
+            android:layout_marginLeft="8dp"
+            android:background="@android:color/transparent"
+            android:hint="Meeting ID"
+            android:textColor="#fff"
+            android:textColorHint="#f2f2f2"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:onClick="onButtonClick"
+            android:textColor="#f2f2f2"
+            android:background="#1e1d1d"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="Join"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
